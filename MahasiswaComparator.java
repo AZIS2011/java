@@ -1,10 +1,10 @@
 import java.util.Comparator;
 
 /**
- * Write a description of class MahasiswaComparator here.
+ * MahasiswaComparator 
  *
- * @author M. RISKI AZIS
- * @version 1
+ * @author   M. RISKI AZIS
+ * @version  1
  */
 public class MahasiswaComparator implements Comparator<Mahasiswa>
 {

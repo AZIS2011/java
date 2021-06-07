@@ -3,10 +3,10 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
- * Write a description of class Main here.
+ * class Main
  *
- * @author (Hayatun syauli)
- * @version (a version number or a date)
+ * @author   M. RISKI AZIS
+ * @version  1
  */
 public class Main
 {
@@ -16,8 +16,33 @@ public class Main
         ArrayList<String> arrs = new ArrayList<String>();
         ArrayListCustom<Integer> arrc = new ArrayListCustom<Integer>(false);
         ArrayList<Mahasiswa> arrm = new ArrayList<Mahasiswa>();
+    
         
-         System.out.println("Data Mahasiswa");
+        /*
+        //ArrayListCostum 
+        arrc.add(2);
+        arrc.add(1);
+        arrc.add(5);
+        arrc.add(4);
+        
+        
+    
+        arri.add(4);
+        arri.add(5);
+        arri.add(2);
+        arri.add(1);
+   
+        
+        arrs.add("Desi");
+        arrs.add("Angel");
+        arrs.add("Budi");
+        arrs.add("Franco");
+        
+        */
+        
+      
+        
+        System.out.println("Data Mahasiswa");
         System.out.print("Jumlah Mahasiswa: ");
         Scanner input = new Scanner(System.in);
         int jumlah=0, nim=0,umur=0;
@@ -72,6 +97,48 @@ public class Main
         //Menampilkan Hasil Input Dengan di Sorting
         Collections.sort(arrm,new MahasiswaComparator());
         System.out.println("Menampilkan Data Mahasiswa Sesuai urutan Integer(Umur)");
+        for (Mahasiswa mhs: arrm)
+        {
+            System.out.println("Nim : "+mhs.getnimMhs());
+            System.out.println("Nama : "+mhs.getnamaMhs());
+            System.out.println("Alamat : "+mhs.getalamatMhs());
+            System.out.println("Kelas : "+mhs.getkelasMhs());
+            System.out.println("Umur : "+mhs.getumurMhs());
+            System.out.println("---------------------");
+        }
+        
+         
+        //Menampilkan Hasil Input Dengan di Sorting
+        Collections.sort(arrm,new MahasiswaComparatorString());
+        System.out.println("Menampilkan Data Mahasiswa Sesuai urutan String(Nama)");
+        for (Mahasiswa mhs: arrm)
+        {
+            System.out.println("Nim : "+mhs.getnimMhs());
+            System.out.println("Nama : "+mhs.getnamaMhs());
+            System.out.println("Alamat : "+mhs.getalamatMhs());
+            System.out.println("Kelas : "+mhs.getkelasMhs());
+            System.out.println("Umur : "+mhs.getumurMhs());
+            System.out.println("---------------------");
+        }
+        
+         
+        //Menampilkan Hasil Input Dengan di Sorting
+        Collections.sort(arrm,new MahasiswaComparatorString());
+        System.out.println("Menampilkan Data Mahasiswa Sesuai urutan String(Alamat)");
+        for (Mahasiswa mhs: arrm)
+        {
+            System.out.println("Nim : "+mhs.getnimMhs());
+            System.out.println("Nama : "+mhs.getnamaMhs());
+            System.out.println("Alamat : "+mhs.getalamatMhs());
+            System.out.println("Kelas : "+mhs.getkelasMhs());
+            System.out.println("Umur : "+mhs.getumurMhs());
+            System.out.println("---------------------");
+        }
+        
+     
+        //Menampilkan Hasil Input Dengan di Sorting
+        Collections.sort(arrm,new MahasiswaComparatorString());
+        System.out.println("Menampilkan Data Mahasiswa Sesuai urutan Integer(Nim)");
         for (Mahasiswa mhs: arrm)
         {
             System.out.println("Nim : "+mhs.getnimMhs());
@@ -143,6 +210,7 @@ public class Main
             System.out.println("-----------------------------");
         }
         
+        /*
         //Menghapus data Mahasiswa
         System.out.println("\nMenghapus Data Mahasiswa");
         System.out.print("Masukkan NIM yang ingin Dihapus: ");
@@ -155,7 +223,7 @@ public class Main
             }
         }
         
-        //Menampilkan Hasil Update
+        //Menampilkan Hasil Setelah Dihapus
         System.out.println("\n");
         System.out.println("Data Setelah di Dihapus");
         for (Mahasiswa mhs : arrm)
@@ -167,7 +235,9 @@ public class Main
             System.out.println("Umur : "+mhs.getumurMhs());
             System.out.println("-----------------------------");
         }
-    
+        */
+         
+       
         System.out.println("Menampilkan Data Mahasiswa");
         for (Mahasiswa mhs: arrm)
         {
@@ -178,6 +248,53 @@ public class Main
                 break;
             }
             System.out.println(mhs.getnimMhs()+" - "+ mhs.getnamaMhs());
+        }    
+        
+          
+       
+        
+       
+      
+        
+        /*
+        System.out.println("");
+        Collections.sort(arrc);
+        System.out.println("Menampilkan Nilai Array List Custom");
+        for (int i=0; i < arrc.size(); i++){
+            System.out.println(arrc.get(i));
         }
+        
+        
+        System.out.println("----------------------------------------------------");
+        System.out.println("----------------------------------------------------");
+        System.out.println("Menampilkan Nilai Array List dengan for biasa");
+        for(int i=0; i < arri.size(); i++){
+            System.out.println(arri.get(i));
+            //System.out.println(arrs.get(i));
+        }
+        
+        System.out.println("");
+        Collections.sort(arri);
+        System.out.println("Menampilkan Nilai Array List iterator");
+        for (Integer valx: arri){
+            System.out.println(valx);
+        }
+        
+        System.out.println("");
+        System.out.println("Menampilkan Nilai Array sebelum sort");
+        for (String valx: arrs){
+            System.out.println(valx);
+        }
+        
+        System.out.println("");
+        Collections.sort(arrs);
+        System.out.println("Menampilkan Nilai Array setelah sort");
+        for (String valx: arrs){
+            System.out.println(valx);
+        }
+            
+        */
+   
     }
+    
 }
